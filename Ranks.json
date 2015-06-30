@@ -1,0 +1,236 @@
+{
+    "Enlisted": [{
+            "title": "Recruit",
+            "abbreviation": "Rec.",
+            "insignia": "Ranks/USMC-E1.svg",
+            "NATOCode": "NONE",
+            "BecomeRank": "You need to fill in <a target=\"_blank\"  href=\"http://27thsm.enjin.com/recruitment\">this form</a>.",
+            "inUse": "true"
+        }, {
+            "title": "Private",
+            "abbreviation": "Pvt.",
+            "insignia": "Ranks/USMC-E2.svg",
+            "NATOCode": "OR-1",
+            "BecomeRank": "",
+            "inUse": "true"
+        }, {
+            "title": "Private First Class",
+            "abbreviation": "PFC.",
+            "insignia": "Ranks/USMC-E2.svg",
+            "NATOCode": "OR-1",
+            "BecomeRank": "",
+            "inUse": "true"
+        }, {
+            "title": "Hospital Corpsman 3rd Cl",
+            "abbreviation": "HM3.",
+            "insignia": "Ranks/Hospital Corpsman 3rd Class.svg",
+            "NATOCode": "E-4",
+            "BecomeRank": "",
+            "inUse": "false"
+        }, {
+            "title": "Hospital Corpsman 2nd Cl",
+            "abbreviation": "HM2.",
+            "insignia": "Ranks/Hospital Corpsman 2nd Class.svg",
+            "NATOCode": "E-5",
+            "BecomeRank": "",
+            "inUse": "false"
+        }, {
+            "title": "Hospital Corpsman 1st Cl",
+            "abbreviation": "HM1.",
+            "insignia": "Ranks/Hospital Corpsman 1st Class.svg",
+            "NATOCode": "E-6",
+            "BecomeRank": "",
+            "inUse": "false"
+        }, {
+            "title": "Lance Corporal",
+            "abbreviation": "LCpl.",
+            "insignia": "Ranks/USMC-E3.svg",
+            "NATOCode": "OR-3",
+            "BecomeRank": "",
+            "inUse": "true"
+        }, {
+            "title": "Corporal",
+            "abbreviation": "Cpl.",
+            "insignia": "Ranks/USMC-E4.svg",
+            "NATOCode": "OR-4",
+            "BecomeRank": "",
+            "inUse": "true"
+        }, {
+            "title": "Sergeant",
+            "abbreviation": "Sgt.",
+            "insignia": "Ranks/USMC-E5.svg",
+            "NATOCode": "OR-5",
+            "BecomeRank": "",
+            "inUse": "true"
+        }, {
+            "title": "Staff Sergeant",
+            "abbreviation": "SSgt.",
+            "insignia": "Ranks/USMC-E6.svg",
+            "NATOCode": "OR-6",
+            "BecomeRank": "",
+            "inUse": "true"
+        }, {
+            "title": "Chief Hospital Corpsman",
+            "abbreviation": "HMC.",
+            "insignia": "Ranks/Chief Hospital Corpsman.svg",
+            "NATOCode": "E-7",
+            "BecomeRank": "",
+            "inUse": "true"
+        }, {
+            "title": "Gunnery Sergeant",
+            "abbreviation": "GySgt.",
+            "insignia": "Ranks/USMC-E7.svg",
+            "NATOCode": "OR-7",
+            "BecomeRank": "",
+            "inUse": "true"
+        }, {
+            "title": "Master Sergeant",
+            "abbreviation": "MSgt.",
+            "insignia": "Ranks/USMC-E8-MSG.svg",
+            "NATOCode": "OR-8",
+            "BecomeRank": "",
+            "inUse": "true"
+        }, {
+            "title": "First Sergeant",
+            "abbreviation": "1Sgt.",
+            "insignia": "Ranks/USMC-E8-1SG.svg",
+            "NATOCode": "OR-8",
+            "BecomeRank": "",
+            "inUse": "false"
+        }, {
+            "title": "Master Gunnery Sergeant",
+            "abbreviation": "MGySgt.",
+            "insignia": "Ranks/USMC-E9-MGyS.svg",
+            "NATOCode": "OR-9",
+            "BecomeRank": "",
+            "inUse": "false"
+        }, {
+            "title": "Sergeant Major",
+            "abbreviation": "SgtMaj.",
+            "insignia": "Ranks/USMC-E9-SGM.svg",
+            "NATOCode": "OR-9",
+            "BecomeRank": "",
+            "inUse": "false"
+        }, {
+            "title": "Sergeant Major of the Marine Corps",
+            "abbreviation": "SgtMajMarCor.",
+            "insignia": "Ranks/USMC-E9-SGMMC.svg",
+            "NATOCode": "OR-9",
+            "BecomeRank": "",
+            "inUse": "false"
+        }],
+    "CommissionedOfficers": [{
+            "title": "Second Lieutenant",
+            "abbreviation": "2Lt.",
+            "insignia": "Ranks/US-O1.svg",
+            "NATOCode": "OF-1",
+            "BecomeRank": "",
+            "inUse": "false"
+        }, {
+            "title": "First Lieutenant",
+            "abbreviation": "1Lt.",
+            "insignia": "Ranks/US-O2.svg",
+            "NATOCode": "OF-1",
+            "BecomeRank": "",
+            "inUse": "true"
+        }, {
+            "title": "Captain",
+            "abbreviation": "Cpt.",
+            "insignia": "Ranks/US-O3.svg",
+            "NATOCode": "OF-2",
+            "BecomeRank": "",
+            "inUse": "true"
+        }, {
+            "title": "Major",
+            "abbreviation": "Maj.",
+            "insignia": "Ranks/US-O4.svg",
+            "NATOCode": "OF-3",
+            "BecomeRank": "",
+            "inUse": "true"
+        }, {
+            "title": "Lieutenant Colonel",
+            "abbreviation": "LtCol.",
+            "insignia": "Ranks/US-O5.svg",
+            "NATOCode": "OF-4",
+            "BecomeRank": "",
+            "inUse": "false"
+        }, {
+            "title": "Colonel",
+            "abbreviation": "Col.",
+            "insignia": "Ranks/US-O6.svg",
+            "NATOCode": "OF-5",
+            "BecomeRank": "",
+            "inUse": "true"
+        }, {
+            "title": "Brigadier General",
+            "abbreviation": "BGen.",
+            "insignia": "Ranks/US-O7.svg",
+            "NATOCode": "OF-6",
+            "BecomeRank": "",
+            "inUse": "false"
+        }, {
+            "title": "Major General",
+            "abbreviation": "MajGen.",
+            "insignia": "Ranks/US-O8.svg",
+            "NATOCode": "OF-7",
+            "BecomeRank": "",
+            "inUse": "false"
+        }, {
+            "title": "lieutenant General",
+            "abbreviation": "LtGen.",
+            "insignia": "Ranks/US-O9.svg",
+            "NATOCode": "OF-8",
+            "BecomeRank": "",
+            "inUse": "false"
+        }, {
+            "title": "General",
+            "abbreviation": "Gen.",
+            "insignia": "Ranks/US-O10.svg",
+            "NATOCode": "OF-9",
+            "BecomeRank": "",
+            "inUse": "false"
+        }],
+    "WarrantOfficers": [{
+            "title": "Warrant Officer 1",
+            "abbreviation": "WO1.",
+            "insignia": "Ranks/USMC_WO1.svg",
+            "NATOCode": "WO-1",
+            "BecomeRank": "",
+            "inUse": "true"
+        }, {
+            "title": "Chief Warrant Officer 2",
+            "abbreviation": "CWO2.",
+            "insignia": "Ranks/USMC_CWO2.svg",
+            "NATOCode": "WO-2",
+            "BecomeRank": "",
+            "inUse": "false"
+        }, {
+            "title": "Chief Warrant Officer 3",
+            "abbreviation": "CWO3.",
+            "insignia": "Ranks/USMC_CWO3.svg",
+            "NATOCode": "WO-3",
+            "BecomeRank": "",
+            "inUse": "false"
+        }, {
+            "title": "Chief Warrant Officer 4",
+            "abbreviation": "CWO4.",
+            "insignia": "Ranks/USMC_CWO4.svg",
+            "NATOCode": "WO-4",
+            "BecomeRank": "",
+            "inUse": "false"
+        }, {
+            "title": "Chief Warrant Officer 5",
+            "abbreviation": "CWO5.",
+            "insignia": "Ranks/USMC_CWO5.svg",
+            "NATOCode": "WO-5",
+            "BecomeRank": "",
+            "inUse": "true"
+        }, {
+            "title": "Warrant Officer Candidate",
+            "abbreviation": "WOC.",
+            "insignia": "Ranks/USMC_WOC.svg",
+            "NATOCode": "WOC",
+            "BecomeRank": "",
+            "inUse": "true"
+        }]
+}

@@ -1,0 +1,340 @@
+[{
+        "recruits": [
+            "Person 1", "Person 2", "Person 3"
+        ]
+    }, {
+        "name": "Root Element",
+        "longName": "Long name of Element",
+        "commander": "Person 2",
+        "callsign": "Emperor",
+        "symbol": "Infantry.svg",
+        "size": "Company",
+        "squadfile": "",
+        "subUnits": [{
+                "name": "1st Plat",
+                "longName": "1st Platoon",
+                "commander": "Person 5",
+                "callsign": "Actual",
+                "symbol": "symbole.png",
+                "size": "Platoon",
+                "squadfile": "",
+                "subUnits": [{
+                        "name": "HQ",
+                        "longName": "HQ",
+                        "commander": "Person 5",
+                        "callsign": "",
+                        "symbol": "HQ.svg",
+                        "size": "Squad",
+                        "squadfile": "",
+                        "subUnits": [{
+                                "players": ["Person 3", "Person 2"]
+                            }]
+                    }, {
+                        "name": "Alpha Squad",
+                        "longName": "Alpha Squad",
+                        "commander": "David",
+                        "callsign": "Alpha",
+                        "symbol": "Alpha",
+                        "size": "Squad",
+                        "squadfile": "Alpha.xml",
+                        "subUnits": [{
+                                "players": ["", "", "", "", "", "", ""]
+                            }]
+                    }, {
+                        "name": "Bravo Squad",
+                        "longName": "Bravo Squad",
+                        "commander": "Wallaberto",
+                        "callsign": "Bravo",
+                        "symbol": "Bravo",
+                        "size": "Squad",
+                        "squadfile": "Bravo.xml",
+                        "subUnits": [{
+                                "players": ["", "", "", "", "", "", ""]
+                            }]
+                    }, {
+                        "name": "Charlie Squad",
+                        "longName": "Charlie Squad",
+                        "commander": "Manx",
+                        "callsign": "Charlie",
+                        "symbol": "Charlie",
+                        "size": "Squad",
+                        "squadfile": "Charlie.xml",
+                        "subUnits": [{
+                                "players": ["", "", "", "", "", "", ""]
+                            }]
+                    }]
+            }, {
+                "name": "Recon",
+                "longName": "Reconnaissance",
+                "commander": "Aziz",
+                "callsign": "Spartan",
+                "symbol": "Recon",
+                "size": "Squad",
+                "squadfile": "",
+                "subUnits": [{
+                    "players": ["", "", "", "", "", "", ""]
+                }]
+            }, {
+                "name": "Support",
+                "longName": "Support",
+                "commander": "Kwinno",
+                "callsign": "Thunder",
+                "symbol": "",
+                "size": "Platoon",
+                "squadfile": "",
+                "subUnits": [{
+                    "name": "ACE",
+                    "longName": "Aviation Combat Element",
+                    "commander": "Speck",
+                    "callsign": "Eagle",
+                    "symbol": "ACE",
+                    "size": "Squad",
+                    "squadfile": "ACE.xml",
+                    "subUnits": [{
+                        "players": ["", "", "", "", "", "", ""]
+                    }]
+                }, {
+                    "name": "LCE",
+                    "longName": "Logistics Combat Element",
+                    "commander": "Cook",
+                    "callsign": "Hotel",
+                    "symbol": "LCE",
+                    "size": "Squad",
+                    "squadfile": "",
+                    "subUnits": [{
+                        "players": ["", "", "", "", "", "", ""]
+                    }]
+                }]
+            }]
+    }, {
+        "reserved": [
+            "Person 1", "Person 2", "Person 3"
+        ]
+    }, {
+        "enlisted": [
+            {
+                "ID": "Person 1",
+                "name": "27thSM",
+                "rank": "First Lieutenant",
+                "role": "Officer",
+                "UID": "76561...",
+                "remark": "Joy",
+                "joined": "2015-01-01",
+                "lastOP": "2015-01-01",
+                "country": "be",
+                "badges": ["Officer"]
+            }, {
+                "ID": "Person 2",
+                "name": "Ralph Bisschops",
+                "rank": "Major",
+                "role": "Officer",
+                "UID": "76561...",
+                "remark": "Quod Erat Demonstrandum",
+                "joined": "2015-01-01",
+                "lastOP": "2015-01-01",
+                "country": "be",
+                "badges": ["Officer"]
+            }
+        ]
+    }, {
+        "badges": [{
+                "id": "Badges",
+                "name": "Formations",
+                "type": "0",
+                "icon": "",
+                "discription": "Done training of formations, knows at least the following basic formations: Line, File, Echelon, Wedge, Vee and Diamond. and can recal them within a few sec. Awarded by trainer.",
+                "requirements": []
+            }, {
+                "id": "Bounding",
+                "name": "Bounding",
+                "type": "0",
+                "icon": "",
+                "discription": "Done training for Bounding, knows how to use Succesive and Alternating Bounding Overwatch. Awarded by trainer.",
+                "requirements": []
+            }, {
+                "id": "TFR",
+                "name": "TFR",
+                "type": "0",
+                "icon": "",
+                "discription": "Done training for Task Force Radio, knows how to use the short-range radio and can use the basic radio communications protocols. Awarded by trainer.",
+                "requirements": []
+            }, {
+                "id": "First Aid",
+                "name": "First Aid",
+                "type": "0",
+                "icon": "",
+                "discription": "Done training for First Aid, knows how to use the basic medical supplies and treat following injuries: Bleeding and Pain. He is also knows what to do if friedly troops are injuries and how to help the medic. Awarded by trainer.",
+                "requirements": []
+            }, {
+                "id": "Fast-roping",
+                "name": "Fast-roping",
+                "type": "0",
+                "icon": "",
+                "discription": "Done training for Fast-roping, knows how to use jump out with the fast-roping system. Knows where to ga after jumping out. Awarded by trainer.",
+                "requirements": []
+            }, {
+                "id": "Firerange",
+                "name": "Firerange",
+                "type": "0",
+                "icon": "",
+                "discription": "Done training for firerange, can shoot down targets at ranges up to 250m with no difficulty (with RCO scope). He knows to a proximate ranges of tragets up to 400m (without binoculars). He knows how he can rest his wapon on objects. Awarded by trainer.",
+                "requirements": []
+            }, {
+                "id": "BCT",
+                "name": "&#x25e6; BCT &#x25e6;",
+                "type": "1",
+                "icon": "",
+                "discription": "Did all your BCT trainings. {\"Formations\" and \"Bounding\" and \"TFR\" and \"First Aid\" and \"Fast-roping\" and \"Firerange\"}",
+                "requirements": ["Formations", "Bounding", "TFR", "First Aid", "Fast-roping", "Firerange"]
+            }, {
+                "id": "Breaching",
+                "name": "Breaching",
+                "type": "1",
+                "icon": "",
+                "discription": "Done training for breaching, knows how to breach buildings and knows/can use all the communications protocols the come with this. Awarded by trainer.",
+                "requirements": []
+            }, {
+                "id": "Firerange (LR)",
+                "name": "Firerange (LR)",
+                "type": "1",
+                "icon": "",
+                "discription": "Done training for firerange (Long Range), can shoot down targets at ranges up to 600m and moving targets up to 400m with no difficulty (with RCO scope). He knows to a proximate ranges of tragets up to 800m (without binoculars). He knows how he can rest his wapon on objects. Awarded by trainer.",
+                "requirements": []
+            }, {
+                "id": "Combined Arms",
+                "name": "Combined Arms",
+                "type": "1",
+                "icon": "",
+                "discription": "Done training for combined arms, knows how to work with vehicles aloing you side and what to do if you take fire. Awarded by trainer.",
+                "requirements": []
+            }, {
+                "id": "Formations(Squad)",
+                "name": "Formations(Squad)",
+                "type": "1",
+                "icon": "",
+                "discription": "Got the 'Formations' badge and knows about extra formations that the Squad leader introduced. Will be removed if you more squad. Awarded by Squad leader.",
+                "requirements": []
+            }, {
+                "id": "Specialist",
+                "name": "&#x25cb; Specialist &#x25cb;",
+                "type": "2",
+                "icon": "",
+                "discription": "Did all your BCT and Basic AIT. {\"BCT\" and \"Breaching\" and \"Firerange (LR)\" and \"Combined Arms\"}",
+                "requirements": [["Formations", "BCT"], ["Bounding", "BCT"], ["TFR", "BCT"], ["First Aid", "BCT"], ["Fast-roping", "BCT"], ["Firerange", "BCT"], "Breaching", "Firerange (LR)", "Combined Arms"]
+            }, {
+                "id": "TFR(LR)",
+                "name": "TFR(LR)",
+                "type": "2",
+                "icon": "",
+                "discription": "Got the 'TFR' badge. Done training for Task Force Radio (Long Range), knows how to use the long-range radio and can use the all radio communications protocols. Awarded by trainer.",
+                "requirements": []
+            }, {
+                "id": "Commander",
+                "name": "Commander",
+                "type": "2",
+                "icon": "",
+                "discription": "If you have done a (training) OP where you were appointed to be squad leader or being appointed squad lead due to circumstances and if you have done a good job leading the squad. The squad need to consists of a decent amount of people. Awarded by Squad leader or CO.",
+                "requirements": []
+            }, {
+                "id": "Medic",
+                "name": "Medic",
+                "type": "2",
+                "icon": "",
+                "discription": "Done training for Medic, knows how to use all medical supplies and can treat all injuries. He knows what he can and can not do as a medic. Awarded by trainer.",
+                "requirements": []
+            }, {
+                "id": "AT",
+                "name": "AT",
+                "type": "2",
+                "icon": "",
+                "discription": "Done training for anti-tank, knows the diffent kinds of missiles and know when you use each one. Can hit targets up to 500m. Knows how to use locked missiles and guided missiles. Awarded by Squad leader.",
+                "requirements": []
+            }, {
+                "id": "Marksman",
+                "name": "Marksman",
+                "type": "2",
+                "icon": "",
+                "discription": "Done training for marksman, can hit targets up to 800m-1000m with marksmans rifle (, not a sniper rifle) in a few shots. Can hit moving targets up to 800m in a few shots. Awarded by Squad leader.",
+                "requirements": []
+            }, {
+                "id": "Explosion Specialist",
+                "name": "Explosion Specialist",
+                "type": "2",
+                "icon": "",
+                "discription": "Done training for explosion specialist, knows how to place mines and explosives. Can disarm mines in a few minutes with a 90% succes rate. Knows all the diffirent types of mines and how effective they are. Knows how all explosives and mines work. Can calculate and approximate what each mine will do with different types op vehicles and placements around the vehicle. Awarded by Squad leader.",
+                "requirements": []
+            }, {
+                "id": "Autorifleman",
+                "name": "Autorifleman",
+                "type": "2",
+                "icon": "",
+                "discription": "Done training for autorifleman. No full discription yet.",
+                "requirements": []
+            }, {
+                "id": "Grenadier",
+                "name": "Grenadier",
+                "type": "2",
+                "icon": "",
+                "discription": "Done training for grenadier. No full discription yet.",
+                "requirements": []
+            }, {
+                "id": "Expert",
+                "name": "&#x25cf; Expert &#x25cf;",
+                "type": "3",
+                "icon": "",
+                "discription": "Did all your Trainings. {\"BCT\" and \"Specialist\" and \"Formations(Squad)\" and \"TFR(LR)\" and \"Commander\" and \"Medic\" and \"AT\" and \"Marksman\" and \"Explosion Specialist\" and \"Autorifleman\" and \"Grenadier\"}",
+                "requirements": [["Formations", "BCT"], ["Bounding", "BCT"], ["TFR", "BCT"], ["First Aid", "BCT"], ["Fast-roping", "BCT"], ["Firerange", "BCT"], ["Breaching", "Specialist"], ["Firerange (LR)", "Specialist"], ["Combined Arms", "Specialist"], "Formations(Squad)", "TFR(LR)", "Commander", "Medic", "AT", "Marksman", "Explosion Specialist", "Autorifleman", "Grenadier"]
+            }, {
+                "id": "Officer",
+                "name": "&#x25a0; Officer &#x25a0;",
+                "type": "4",
+                "icon": "",
+                "discription": "This badge will be awarded to all COs",
+                "requirements": []
+            }]
+    }, {
+        "roles": [{
+                "role": "Rifleman",
+                "icon": "Roles/rifleman.svg"
+            }, {
+                "role": "Medic",
+                "icon": "Roles/medic.svg"
+            }, {
+                "role": "Autorifleman",
+                "icon": "Roles/autorifleman.svg"
+            }, {
+                "role": "AT",
+                "icon": "Roles/AT.svg"
+            }, {
+                "role": "Officer",
+                "icon": "Roles/officer.svg"
+            }, {
+                "role": "Squadlead",
+                "icon": "Roles/squadlead.svg"
+            }, {
+                "role": "Explosion Specialist",
+                "icon": "Roles/ES.svg"
+            }, {
+                "role": "Engineer",
+                "icon": "Roles/engineer.svg"
+            }, {
+                "role": "Marksman",
+                "icon": "Roles/marksman.svg"
+            }, {
+                "role": "Grenadier",
+                "icon": "Roles/grenadier.svg"
+            }, {
+                "role": "Pilot",
+                "icon": "Roles/pilot.svg"
+            }, {
+                "role": "Radioman",
+                "icon": "Roles/radioman.svg"
+            }, {
+                "role": "PilotCAS",
+                "icon": "Roles/pilotCAS.svg"
+            }, {
+                "role": "PilotLog",
+                "icon": "Roles/pilotLog.svg"
+            }]
+    }
+]

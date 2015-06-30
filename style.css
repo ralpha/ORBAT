@@ -1,0 +1,529 @@
+body{
+    margin: 0;
+    overflow-x: auto;
+    overflow-y: auto;
+    white-space: nowrap;
+
+    font-size: 16px;
+    font-family: "Cinzel";
+    font-style: normal;
+    font-weight: 400;
+}
+
+.menu{
+    list-style-type: none;
+    background: green;
+}
+
+.menu > li{
+    display: inline-block;
+}
+
+.menu li{
+    margin: 0 10px;
+}
+
+.menu li > div.menuitem, .menu li > a{
+    padding: 5px 10px 5px 10px;
+    display: inline-block;
+}
+
+.menu li:hover > div.menuitem, .menu li:hover > a{
+    background: greenyellow;
+    width: 100%;
+}
+
+.menu > li > ul > li:hover div.menuitem, .menu > li > ul > li:hover a{
+    color: black;
+}
+
+.menu li a{
+    color: white;
+}
+
+.menu > li:hover > div.menuitem, .menu > li:hover > a{
+    color: black;
+}
+
+.menu > li > ul{
+    display: none;
+    list-style:none;
+    position:absolute;
+    padding: 0;
+}
+
+.menu > li:hover > ul{
+    display: block;
+}
+
+.menu > li > ul > li{
+    display: flex;
+    background: green;
+    margin: 0;
+}
+
+.notification{
+    display: block;
+    position: absolute;
+    margin: 60px 0 0 0;
+    padding: 20px;
+    background-color: #b6b6b6;
+    min-width: 200px;
+    max-width: 300px;
+    min-height: 50px;
+    box-shadow: rgba(0, 0, 0, 0.66) 7px 7px 3px;
+    white-space: normal;
+}
+.notification:before{
+    border: solid transparent;
+    content: " ";
+    border-bottom-color: #b6b6b6;
+    border-width: 15px;
+    position: absolute;
+    bottom: 100%;
+}
+
+#overlay{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top:0; 
+    left:0; 
+    z-index: 90;
+}
+
+.backshadow{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top:0; 
+    left:0; 
+    background:rgba(0,0,0,0.6);
+}
+
+.hide{
+    display: none;
+}
+
+#window{
+    width: 500px;
+    min-height: 600px;
+    max-width: 80%;
+    max-height: 80%;
+    margin: 20px auto;
+    overflow: auto;
+    z-index: 1;
+    position: relative;
+}
+
+#windowContent{
+    padding: 5px;
+    white-space: normal;
+    font-weight: 400;
+    font-size: 14pt;
+}
+
+#windowContent h1,#windowContent h2,#windowContent h3{
+    clear: both;
+}
+
+#orbatRoot > .unit {
+    margin-right: 200px;
+}
+
+.unit{
+    min-width: 100px;
+    width: auto;
+    height: auto;
+    min-height: 100px;
+    text-align: center;
+    display: inline-block;
+    vertical-align: top;
+}
+.info{
+    display: inline-block;
+    margin: 0 10px;
+}
+.info .size{
+    text-align: center;
+    top: 5px;
+    position: relative;
+}
+.hidden{
+    display: none;
+}
+.extraInfo{
+    display: none;
+    position: absolute;
+    width: auto;
+    height: auto;
+    border: 2px solid black;
+    padding: 10px;
+    z-index: 50;
+}
+
+.flag{
+    max-height: 20px;
+    padding-left: 20px;
+    max-width: 40px; 
+}
+
+.info:hover .extraInfo{
+    display: block;
+}
+
+.player:hover .extraInfo, .reserved:hover .extraInfo{
+    display: block;
+}
+
+.player .extraInfo, .reserved .extraInfo{
+    margin-left: 40px;
+    min-width: 300px;
+}
+
+.reserved, .recruit .name{
+    font-weight: 700;
+}
+
+.recruit .name p{
+    display: inline;
+}
+
+.extraInfo .date{
+    font-weight: 700;
+}
+
+.extraInfo .longName{
+    max-width: 300px;
+    white-space: normal;
+}
+
+#orbatRoot > .unit > .info .symbolImg{
+    width: 180px;
+}
+.symbolImg{
+    width: 110px;
+}
+.line{
+    height: 20px;
+}
+.hline, .hline > .lineC{
+    height: 2px;
+}
+
+.line > .lineC{
+    width: 2px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.subUnits{
+    vertical-align: bottom;
+}
+.subUnits > .unit:first-child > .hline{
+    position: relative;
+    left: 50%;
+    width: 50%;
+}
+.subUnits > .unit:last-child > .hline{
+    position: relative;
+    width: 50%;
+}
+.subUnits > .unit:only-child > .hline{
+    width: 0;
+    position: absolute;
+    display: none;
+}
+.subUnits > .unit:only-child{
+    width: 100%;
+}
+.name{
+    margin: 0;
+}
+
+.Rank, .recinfo{
+    font-weight: 400;
+}
+
+.player p{
+    margin: 0px;
+    display: inline-block;
+}
+.players{
+    border: 2px solid;
+    padding: 5px 10px 5px 10px;
+    margin: 0 10px;
+    width: auto;
+    text-align: left;
+    list-style-type: none;
+}
+.players .Insignia{
+    margin: 0 10px 0 0;
+}
+
+.other{
+    clear: both;
+}
+
+.rec, .res{
+    float: left;
+    border: 2px solid;
+    width: auto;
+    margin: 20px;
+    padding-right: 20px;
+    max-width: 750px;
+}
+
+.rec{
+    clear: left;
+}
+.res{
+    clear: right;
+}
+
+.recruit{
+    display: inline-block;
+    width: 100%;
+}
+.left{
+    float: left;
+    clear: left;
+}
+.right{
+    float: right;
+    clear: right;
+}
+.date, .progress{
+    display: inline-block;
+    margin-left: 20px;
+}
+.progress div{
+    display: inline-block;
+    margin: 0 3px;
+}
+footer{
+    clear: both;
+    float: left;
+}
+
+.unit .Insignia{
+    width: 30px;
+    min-height: 20px;
+    max-height: 40px;
+}
+.unit .role{
+    max-width: 15px;
+    max-height: 40px;
+    margin-right: 5px;
+}
+
+.playerInfo, .playerInfoFull{
+    display: inline-block;
+    vertical-align: top;
+    min-width: 220px;
+}
+
+.playerInfoFull{
+    width: 100%;
+}
+
+
+.playerImg{
+    display: inline-block;
+}
+
+.playerImg .Insignia, .playerImg .role{
+    width: 70px;
+    max-height: 100px;
+    max-width: 70px;
+    text-align: center;
+}
+
+.playerName{
+    font-size: larger;
+    padding: 2px 2px 15px 0;
+}
+
+.badges{
+    padding: 5px;
+    max-width: 220px;
+}
+
+.badge{
+    padding: 3px;
+    margin: 5px;
+    float: left;
+    font-weight: 700;
+}
+
+.label{
+    font-weight: 400;
+    display: inline;
+}
+
+.inline{
+    float: none;
+    display: inline-block;
+}
+
+.badgesInfo{
+    width: auto;
+}
+
+.roles ul{
+    list-style: none;
+}
+
+.roles ul li{
+    display: inline-block;
+    padding: 10px;
+}
+
+.roles ul li p{
+    text-align: center;
+}
+
+.roles .role{
+    width: 70px;
+    max-height: 100px;
+    max-width: 70px;
+    display: block;
+    margin: 0 auto;
+}
+
+.badges h2{
+    clear: both;
+}
+
+.badges .badge{
+    color: black;
+}
+
+.borderFrame{
+    border: 2px solid black;
+    padding: 3px;
+    display: inline-block;
+    margin: 2px;
+}
+
+/*////////////////////////////////////////////////////*/
+#ORBAT, body{
+    background: #181818;
+    color: #ffffff;
+}
+.size{
+    color: #ffffff;
+}
+
+#window{
+    background-color: #b8b8b8;
+    color: #131629;
+}
+.longName{
+    font-size: x-large;
+    font-weight: bold;
+}
+.player{
+    color: black;
+}
+.notopen, .playerName{
+    color: Green;
+    font-weight: bold;
+}
+.open{
+    font-weight: 400;
+}
+
+.extraInfo{
+    background: #b6b6b6;
+    color: black;
+    box-shadow: rgba(0, 0, 0, 0.66) 7px 7px 3px;
+}
+.lineC{
+    background-color: green;
+}
+.players{
+    border-color: green;
+}
+.rec, .res{
+    border-color: green;
+}
+.green{
+    color: green;
+}
+.orange{
+    color:orange;
+}
+.red{
+    color: red;
+}
+
+.badge{
+    background: whitesmoke;
+    color: black;
+}
+
+.badge.type1{
+    background: chartreuse;
+}
+.badge.type2{
+    background: gold;
+}
+.badge.type3{
+    background: deepskyblue;
+}
+.badge.type4{
+    background: firebrick;
+}
+
+/*//////////////////////Ranks///////////////////////////*/
+#ranks{
+    clear: both;
+}
+
+.ranks ul{
+    list-style: none;
+}
+.ranks .Insignia{
+    width: 30px;
+    min-height: 20px;
+    max-height: 40px;
+}
+
+.ranks .title, .ranks .abbreviation{
+    display: inline-block;
+}
+
+.ranks .abbreviation:before{
+    content: " ( ";
+}
+
+.ranks .abbreviation:after{
+    content: " )";
+}
+
+.ranks li:hover .Insignia{
+    width: 60px;
+    min-height: 40px;
+    max-height: 80px;
+}
+.ranks li:hover .title, .ranks li:hover .abbreviation{
+    font-size: larger;
+    color: Green;
+    font-weight: bold;
+}
+.ranks .becomerank{
+    display: none;
+    max-width: 500px;
+    white-space: normal;
+}
+
+.ranks .becomerank:before{
+    content: "To become: ";
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.ranks li:hover .becomerank{
+    display: block;
+}

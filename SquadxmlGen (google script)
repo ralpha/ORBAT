@@ -1,0 +1,223 @@
+var folderID = "0B8deNilWQGq2cUZTVFBNVjd6SXM"; //destination
+var hostID = "0B8deNilWQGq2a3VUSHlLdldUbFE"; //host
+
+function createSquadFiles(){
+  for(var i = 0; i < squads.length;i++){
+    Logger.log('squad:' + squads[i].name);
+    createSquadFile(squads[i]);
+  }
+}
+
+
+//creat file
+function createSquadFile(squad){
+  var files = DriveApp.getFolderById(folderID).getFilesByName(squad.squadfile);
+  if(files.hasNext()){
+    files.next().setContent(makeFileContent(squad));
+  }else{
+    DriveApp.getFolderById(folderID).createFile(squad.squadfile, makeFileContent(squad), MimeType.PLAIN_TEXT);
+  }
+}
+
+var squads = [];
+var ranks = [];
+var enlisted = [];
+var CO = [];
+
+
+//start generation
+function start(){
+  readJSON();
+  createSquadFiles();
+}
+
+function readJSON(){
+  var ranksJson = JSON.parse(UrlFetchApp.fetch('http://googledrive.com/host/'+hostID+'/Ranks.json').getContentText());
+  parseRanks(ranksJson);
+  var list = JSON.parse(UrlFetchApp.fetch('http://googledrive.com/host/'+hostID+'/27thSM.json').getContentText());
+  parseEnlisted(list);
+  parseSquads(list);
+  squads.push({
+    "nick": "COs",
+    "name": "Commanding Officers",
+    "email": "unitemail@gmail.com",
+    "web": "unitwebsite.com",
+    "picture": "27thSM.paa",
+    "title": "COs",
+    "squadfile": "Officers.xml",
+    "members": getMembersInfo(CO)
+  });
+}
+
+function parseEnlisted(list){
+  parseMembers(list[3].enlisted);
+}
+
+function parseMembers(list){
+  for(var i = 0; i < list.length;i++){
+    parseMember(list[i]);
+  }
+}
+
+function parseMember(member){
+  player = {
+    "ID": member.ID,
+    "name": member.name,
+    "rank": member.rank,
+    "UID": member.UID,
+    "remark": member.remark,
+  }
+  enlisted.push(player);
+}
+
+
+function parseSquads(list){
+  parseUnit(list[1]);
+}
+
+function parseUnit(unit){
+  if(unit.commander != "" && unit.squadfile == ""){
+    var player = getPlayer(unit.commander);
+    if(player != null){
+      CO.push(player);
+    }
+  }
+  if(unit.squadfile != "" && "squadfile" in unit){
+    addSquad(unit);
+    for(var j = 0; j < unit.subUnits.length;j++){
+      if("subUnits" in unit.subUnits[j]){
+        parseUnit(unit.subUnits[j]);
+      }
+    }
+  }else{
+    for(var i = 0; i < unit.subUnits.length;i++){
+      if("players" in unit.subUnits[i]){
+        for(var j = 0; j < unit.subUnits[i].players.length;j++){
+          var player = getPlayer(unit.subUnits[i].players[j]);
+          if(player != null){
+            CO.push(player);
+          }
+        }
+      }else{
+        parseUnit(unit.subUnits[i]);
+      }
+    }
+  }
+}
+
+function parseRanks(ranksJson){
+  for(var i = 0; i < ranksJson.Enlisted.length;i++){
+    parseRank(ranksJson.Enlisted[i]);
+  }
+  for(var i = 0; i < ranksJson.CommissionedOfficers.length;i++){
+    parseRank(ranksJson.CommissionedOfficers[i]);
+  }
+  for(var i = 0; i < ranksJson.WarrantOfficers.length;i++){
+    parseRank(ranksJson.WarrantOfficers[i]);
+  }
+}
+
+function parseRank(rank){
+  ranks.push({
+    "title": rank.title,
+    "abbreviation": rank.abbreviation
+  });
+}
+
+function addSquad(squad){
+  squad = {
+    "nick": squad.name,
+    "name": squad.longName,
+    "email": "youremail@gmail.com",
+    "web": "yourunit.com",
+    "picture": (""+ squad.symbol + ".paa"),
+    "title": squad.name,
+    "squadfile": squad.squadfile,
+    "members": getMembers(squad)
+  }
+  squads.push(squad);
+  
+}
+
+function getMembers(squad){
+  var members = [];
+  if(squad.commander != ""){
+    player = getPlayer(squad.commander);
+    if(player != null){
+      members.push(getMemberInfo(player));
+    }
+  }
+  for(var j = 0; j < squad.subUnits.length;j++){
+    if("players" in squad.subUnits[j]){
+      for(var i = 0; i < squad.subUnits[j].players.length;i++){
+        if(squad.subUnits[j].players[i] != ""){
+          player = getPlayer(squad.subUnits[j].players[i]);
+          if(player != null){
+            members.push(getMemberInfo(player));
+          }
+        }
+      }
+    }
+  }
+  return members;
+}
+
+function getMembersInfo(players){
+  var members = [];
+  Logger.log('squad:' + JSON.stringify(players));
+  for(var i = 0; i < players.length ;i++){
+    members.push(getMemberInfo(players[i]));
+  }
+  return members;
+}
+
+function getMemberInfo(player){
+  return {
+              "nick": makeName({"name":player.name,"rank":player.rank}),
+              "name": player.name,
+              "email": "",
+              "icq": "",
+              "remark": player.remark,
+              "id": player.UID
+            }
+}
+
+function makeFileContent(squad){
+  var output = '<?xml version="1.0"?><!DOCTYPE squad SYSTEM "squad.dtd">';
+  output += makeFileContentSquad(squad);
+  return output;
+}
+
+function makeFileContentSquad(squad){
+  var output = '<squad nick="27thSM, ' + squad.nick +'"><name>'+ squad.name +'</name><email>'+ squad.email +'</email><web>'+ squad.web +'</web><picture>'+ squad.picture +'</picture><title>'+ squad.title +'</title>';
+  for(var i = 0; i < squad.members.length;i++){
+    output += '<member id="'+ squad.members[i].id +'" nick="'+ squad.members[i].nick +'"><name>'+ squad.members[i].name +'</name><email>'+ squad.members[i].email + '</email><icq>'+ squad.members[i].icq +'</icq><remark>'+ squad.members[i].remark +'</remark></member>';
+  }
+  output += '</squad>';
+  return output;
+}
+
+function makeName(player){
+  var name = "";
+  name += getRankAbb(player.rank);
+  name += player.name;
+  return name;
+}
+
+function getRankAbb(rank){
+  for(var i = 0; i < ranks.length;i++){
+    if(ranks[i].title == rank){
+      return ranks[i].abbreviation;
+    }
+  }
+}
+
+function getPlayer(id){
+  for(var i = 0; i < enlisted.length;i++){
+    if(enlisted[i].ID == id){
+      return enlisted[i];
+    }
+  }
+  return null;
+}
+

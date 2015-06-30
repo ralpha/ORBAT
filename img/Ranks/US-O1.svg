@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   version="1.0"
+   width="440"
+   height="500"
+   id="svg20658">
+  <metadata
+     id="metadata26">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs20660">
+    <linearGradient
+       x1="8.4999599"
+       y1="1036.3622"
+       x2="191.49995"
+       y2="1036.3622"
+       id="linearGradient18902"
+       xlink:href="#linearGradient18015"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       id="linearGradient18015">
+      <stop
+         id="stop18017"
+         style="stop-color:#ffb200;stop-opacity:1"
+         offset="0" />
+      <stop
+         id="stop18019"
+         style="stop-color:#ffffff;stop-opacity:1"
+         offset="1" />
+    </linearGradient>
+    <linearGradient
+       x1="8.4999599"
+       y1="569.36218"
+       x2="191.49995"
+       y2="569.36218"
+       id="linearGradient18021"
+       xlink:href="#linearGradient18015"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       id="linearGradient15380">
+      <stop
+         id="stop15382"
+         style="stop-color:#ffb200;stop-opacity:1"
+         offset="0" />
+      <stop
+         id="stop15388"
+         style="stop-color:#fff0cb;stop-opacity:1"
+         offset="0.11959876" />
+      <stop
+         id="stop17140"
+         style="stop-color:#ffb600;stop-opacity:1"
+         offset="0.39780521" />
+      <stop
+         id="stop15390"
+         style="stop-color:#fff0cb;stop-opacity:1"
+         offset="0.62037039" />
+      <stop
+         id="stop15384"
+         style="stop-color:#ffb200;stop-opacity:1"
+         offset="1" />
+    </linearGradient>
+    <linearGradient
+       x1="22.499964"
+       y1="1028.5834"
+       x2="251.7829"
+       y2="436.69754"
+       id="linearGradient15386"
+       xlink:href="#linearGradient15380"
+       gradientUnits="userSpaceOnUse" />
+  </defs>
+  <g
+     transform="translate(120,1.7382813e-5)"
+     id="layer1">
+    <g
+       transform="translate(3.544922e-5,-552.3622)"
+       id="g20650">
+      <rect
+         width="200"
+         height="500"
+         x="-3.5449219e-005"
+         y="552.36218"
+         id="rect3968"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none" />
+      <rect
+         width="148.00002"
+         height="445.44247"
+         x="25.999964"
+         y="579.64093"
+         id="rect3970"
+         style="fill:url(#linearGradient15386);fill-opacity:1;fill-rule:evenodd;stroke:#ffffff;stroke-width:7;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0" />
+      <path
+         d="m 22.49996,577.36218 -14,-16 183,0 -14,16 -155,0 z"
+         id="path9214"
+         style="fill:url(#linearGradient18021);fill-opacity:1;fill-rule:evenodd;stroke:none" />
+      <path
+         d="m 8.49996,1044.3622 14,-16 155,0 14,16 -183,0 z"
+         id="use13597"
+         style="fill:url(#linearGradient18902);fill-opacity:1;fill-rule:evenodd;stroke:none" />
+      <path
+         d="m 191.5,1044.375 -14,-16 0,-451 14,-16 0,483 z"
+         id="use13601"
+         style="fill:#ffb200;fill-opacity:1;fill-rule:evenodd;stroke:#ffb200;stroke-width:0.1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+      <path
+         d="m 8.5,561.375 14,16 0,451 -14,16 0,-483 z"
+         id="use14485"
+         style="fill:#ffe29b;fill-opacity:1;fill-rule:evenodd;stroke:#ffe29b;stroke-width:0.1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+    </g>
+  </g>
+</svg>

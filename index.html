@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Orbat 27thSM</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <![if !IE]>
+        <script src="loader.js"></script>
+        <![endif]>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <!-- Google Fonts embed code -->
+        <script type="text/javascript">
+            (function() {
+                var link_element = document.createElement("link"),
+                    s = document.getElementsByTagName("script")[0];
+                if (window.location.protocol !== "http:" && window.location.protocol !== "https:") {
+                    link_element.href = "http:";
+                }
+                link_element.href += "//fonts.googleapis.com/css?family=Cinzel:400,700,900";
+                link_element.rel = "stylesheet";
+                link_element.type = "text/css";
+                s.parentNode.insertBefore(link_element, s);
+            })();
+        </script>
+    </head>
+    <body>
+        <![if !IE]>
+        <ul class="menu">
+            <li><a href="http://27thsm.com/home" traget="_self">Home</a></li>
+            <li><a href="http://27thsm.com/forum" traget="_self">Forum</a></li>
+            <li><a href="http://27thsm.com/events" traget="_self">Events</a></li>
+            <li><div class="notification">test.</div>
+                <div class="menuitem">ExtraInfo:</div>
+                <ul>            
+                    <li><a onclick="showRoles()">Roles</a></li>
+                    <li><a onclick="showRanks()">Ranks</a></li>
+                    <li><a onclick="showBadges()">Badges</a></li>
+                    <li><a onclick="showBadgesGenInfo()">Badges General Info</a></li>
+                    <li><a onclick="showBadgesInfo()">Badges Info</a></li>
+                </ul>
+                
+            </li>
+        </ul>
+        <div id="overlay" class="hide"><div id="window"><input type="button" value="close" onclick="hideWindow()"/><div id="windowContent"></div></div><div class="backshadow" onclick="hideWindow()"></div></div>
+        <div id="ORBAT" onload="updateLoader()">
+            <div id="orbatRoot"><h1>...Loading<img src="img/loader.gif" alt="Loading"/>...</h1> <p>If it takes to long an error may occurred or you need to allow scripts to run on this page.</p></div>
+        </div>
+        <footer>
+            <p>&COPY; Ralph Bisschops; Version: 2.00;</p>
+        </footer>
+        <![endif]>
+        <!--[if IE]>
+        <ul class="menu">
+            <li><a href="http://27thsm.enjin.com/home" traget="_self">Home</a></li>
+            <li><a href="http://27thsm.enjin.com/forum" traget="_self">Forum</a></li>
+            <li><a href="http://27thsm.enjin.com/events" traget="_self">Events</a></li>
+        </ul>
+        <div>
+            This site doesn't support Internet Explorer.<br/>
+            Please download <a href="http://www.google.com/chrome/"><img src="img/chrome-logo.png" alt="Chrome logo"/>Google Chrome</a> or <a href="https://www.mozilla.org/firefox/"><img src="img/firefox-logo.png" alt="Firefox logo"/>Firefox</a>
+        </div>
+        <![endif]-->
+    </body>
+</html>

@@ -3,14 +3,11 @@ ORBAT made for a military simulation unit.
 
 This project will not longer be updated.
 
-This project is made for the 27thSM (http://27thsm.com)
+This project is made for the 27thSM later reformed to 5thSFG (http://www.5thsfg.eu)
 Made By Ralph Bisschops
 
 Here some screenshots at the end of active use:
 http://imgur.com/a/DWY4o
-
-Feel free to donate to the 27thSM if you like this project:
-http://27thsm.com
 
 If there are any questions you can contact me via github.
 I don't know if I'll be able to reply, but you can try.
